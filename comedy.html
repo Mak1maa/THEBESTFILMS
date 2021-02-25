@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/comedy.css">
+    <link href = "https://fonts.googleapis.com/css?family=Pridi&display=swap" rel = "stylesheet">
+    <title> Comedy and Tragicomedy </title>
+</head>
+<body link = "#E9E9E9" alink = "#E9E9E9" vlink = "#E9E9E9">
+    <div class = "container">
+        <div class = "add">
+            <h1> Comedy and Tragicomedy </h1> <!-- Заголовок обозначающий какой жанр, чтобы не теряться -->
+        </div>
+        <div class = "main"> <!-- Переход на главную страницу -->
+            <h1><a href = "index.html"> Main Page </a></h1>
+        </div>
+    </div>
+    <div class = "genre"> <!-- Блок с фильмами -->
+        <hr class = "m2">
+            <div class = "slider middle">
+                <div class = "slides"> 
+                    <input type = "radio" name = "r" id = "r1" checked>
+                    <input type = "radio" name = "r" id = "r2">
+                    <input type = "radio" name = "r" id = "r3">
+        
+                    <div class = "slide s1"><img src = "img\NG.jpg" alt = ""></div> <!-- Изображения, что в слайдере -->
+                    <div class = "slide"><img src = "img\GB.jpg" alt = ""></div>
+                    <div class = "slide"><img src = "img\TB.jpg" alt = ""></div>
+                </div>
+                <div class = "navigation"> <!-- Кнопки слайдера -->
+                    <label for = "r1" class = "bar"></label>
+                    <label for = "r2" class = "bar"></label>
+                    <label for = "r3" class = "bar"></label>
+                </div>
+            </div>
+        <div class = "top"> <!-- Маленьки топ очень добротных фильмов -->
+            <div class = "list">
+                <h1> Top 5 Comedies </h1>
+                <h2><ol>
+                    <li> The naked gun, 1998 </li>
+                    <li> Pulp Fiction, 1994 </li>
+                    <li> Coming to America, 1988 </li>
+                    <li> Rush Hour, 1999 </li>
+                    <li> The Nice Guys, 2016 </li>
+                </ol><img id = 'img' src = "svg/topb.svg" alt = "top" width = "180" height = "180"></h2><hr>  
+            </div>
+        </div>
+        <div class = "top"> <!-- Маленьки топ очень добротных фильмов -->
+            <div class = "list">
+                <h1> Top 5 Tragicomedies </h1>
+                <h2><ol>
+                    <li> Intouchables, 2011 </li>
+                    <li> Green Book, 2018 </li>
+                    <li> Catch Me If You Can, 2002 </li>
+                    <li> The Grand Budapest Hotel, 2014 </li>
+                    <li> Three Billboards Outside Ebbing, Missouri, 2017 </li>
+                </ol><img id = 'img2' src = "svg/topb.svg" alt = "top" width = "180" height = "180"></h2><hr>  
+            </div>
+        </div>
+        <div class = "note"> <!-- Список фильмов -->
+            <div class = "films">
+                <div class = "movie"> 
+                    <h1> A couple more cool movies </h1>
+                    <h2>
+                        <div class = "bk_1">
+                            <br> Click, 2006
+                            <br> Snatch, 2000
+                            <br> Mean Machine, 2001
+                            <br> RocknRolla, 2008
+                            <br> The Wolf of Wall Street, 2013
+                            <br> Groundhog Day, 1993
+                            <br> Babysitting, 2014 
+                            <br> Tower Heist, 2011 
+                            <br> Beverly Hills Cop, 1984
+                        </div>
+                        <div class = "bk_2">
+                            <br> Major Payne, 1995
+                            <br> Trading Places, 1983
+                            <br> Paul, 2011
+                            <br> The Gentlemen, 2019 
+                            <br> Inglourious Basterds, 2009
+                            <br> Some Like It Hot, 1959
+                            <br> Forrest Gump, 1994
+                            <br> The Bucket List, 2007 
+                            <br> As Good as It Gets, 1997
+                        </div>
+                        <div class = "bk_3">
+                            <br> Home Alone, 1990
+                            <br> 50 First Dates, 2004
+                            <br> Yes man, 2008
+                            <br> Me, Myself & Irene, 2000
+                            <br> Dumb & Dumber, 1994
+                            <br> Bruce Almighty, 2003
+                            <br> Liar Liar, 1997
+                            <br> Ace Ventura, 1993
+                            <br> The Mask, 1994
+                            <br> Sex and the City, 2004
+                            <br> Parasite, 2019
+                            <br> Knockin’ On Heaven’s Door, 1997
+                            <br> Lock, Stock and Two Smoking Barrels, 1998
+                            <br> Once Upon a Time in Hollywood, 2019
+                        </div>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class = "legs"> <!-- Тема -->
+            <div class = "theme">
+                <button id = 'dark'> Black Edition </button>
+                <button id = 'light'> Light Edition </button>
+                <button id = 'special'> Special Edition</button>
+                <button id = 'reset'> Standard Edition </button>
+            </div>
+        </div>
+    </div>
+    <script src = "js/comedy.js"></script>
+</body>
+</html>

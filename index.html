@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/tbf.css">
+    <link href = "https://fonts.googleapis.com/css?family=Pridi&display=swap" rel = "stylesheet">
+    <title> The Best Films </title>
+</head>
+<body link = "black" alink = "black" vlink = "black"> <!-- link - цвет ссылок alink - цвет активной ссылки vlink - после перехода -->
+    <header class = "header">
+        <div class = "wrapper">
+            <a href = "#The Best Films"> <!-- Лого, встречает на входе, так же работает взаимодействие -->
+                <img id = 'img' src = "svg/logo.svg" alt = "TBF">
+            </a>
+        </div>
+    </header>
+    <div class = "log__about">
+        <div class = "log"> <!-- Лого, тут говорить нечего -->
+            <h1><a name = "The Best Films"></a> The Best Films </h1>
+        </div>
+        <div class = "about"> <!-- Кратко о сайте -->
+            <h2> This website about films, and here you find the best films </h2>
+        </div>
+    </div>
+    <div class = "gs"> <!-- Главная часть страницы, переходы, тема, ссылки, слайдер -->
+        <div class = "genre"> <!-- Жанровая стезя, блок с сыллками на другие страницы -->
+            <h2> Which genre films?
+                <br><a href = "adventure.html"> Adventure </a>
+                <br><a href = "action.html"> Action </a>
+                <br><a href = "comedy.html"> Comedy </a>
+                <br><a href = "cartoon.html"> Cartoon </a>
+                <br><a href = "drama.html"> Drama </a>
+                <br><a href = "ff.html"> F&F </a>
+                <br><a href = "horror.html"> Horror </a>
+                <br><a href = "romantic.html"> Romantic </a>
+                <br><a href = "thriller.html"> Thriller </a></h2>
+        </div>
+        <div class = "slider middle"> <!-- Слайдер и его составляющая -->
+            <div class = "slides"> 
+                <input type = "radio" name = "r" id = "r1" checked>
+                <input type = "radio" name = "r" id = "r2">
+                <input type = "radio" name = "r" id = "r3">
+                <input type = "radio" name = "r" id = "r4">
+    
+                <div class = "slide s1"><img src = "img/Green.webp" alt = "Green Book"></div> <!-- Изображения, что в слайдере -->
+                <div class = "slide"><img src = "img/Hateful.jpg" alt = "The Hateful Eight"></div>
+                <div class = "slide"><img src = "img/Catch.jpg" alt = "Catch Me If You Can"></div>
+                <div class = "slide"><img src = "img/Forrest.webp" alt = "Forrest Gump"></div>
+            </div>
+            <div class = "navigation"> <!-- Кнопки слайдера -->
+                <label for = "r1" class = "bar"></label>
+                <label for = "r2" class = "bar"></label>
+                <label for = "r3" class = "bar"></label>
+                <label for = "r4" class = "bar"></label>
+            </div>
+        </div>
+    </div>
+    <div class = "legs">
+        <div class = "ok"> <!-- Тех. поддержка -->
+            <div class = "support"><a href = "support.html"> Technical Support </a></div>
+        </div>
+        <div class = "theme"> <!-- Тема -->
+            <button id = 'dark'> Black Edition </button>
+            <button id = 'light'> Light Edition </button>
+            <button id = 'special'> Special Edition</button>
+            <button id = 'reset'> Standard Edition </button>
+        </div>
+    </div>
+    <script src = "js/theme.js"></script> <!-- Подключение темы -->
+</body>
+</html>

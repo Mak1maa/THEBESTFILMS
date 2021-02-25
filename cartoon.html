@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/cartoon.css">
+    <link href = "https://fonts.googleapis.com/css?family=Pridi&display=swap" rel = "stylesheet">
+    <title> Cartoon </title>
+</head>
+<body link = "#E9E9E9" alink = "#E9E9E9" vlink = "#E9E9E9">
+    <div class = "container">
+        <div class = "add">
+            <h1> Cartoon </h1> <!-- Заголовок обозначающий какой жанр, чтобы не теряться -->
+        </div>
+        <div class = "main"> <!-- Переход на главную страницу -->
+            <h1><a href = "index.html"> Main Page </a></h1>
+        </div>
+    </div>
+    <div class = "genre"> <!-- Блок с фильмами -->
+        <hr class = "m2">
+            <div class = "slider middle">
+                <div class = "slides"> 
+                    <input type = "radio" name = "r" id = "r1" checked>
+                    <input type = "radio" name = "r" id = "r2">
+                    <input type = "radio" name = "r" id = "r3">
+        
+                    <div class = "slide s1"><img src = "img\COCO.webp" alt = ""></div> <!-- Изображения, что в слайдере -->
+                    <div class = "slide"><img src = "img\T.jpg" alt = ""></div>
+                    <div class = "slide"><img src = "img\Z.jpg" alt = ""></div>
+                </div>
+                <div class = "navigation"> <!-- Кнопки слайдера -->
+                    <label for = "r1" class = "bar"></label>
+                    <label for = "r2" class = "bar"></label>
+                    <label for = "r3" class = "bar"></label>
+                </div>
+            </div>
+        <div class = "top"> <!-- Маленьки топ очень добротных фильмов -->
+            <div class = "list">
+                <h1> Top 5 movies that everyone should watch </h1>
+                <h2><ol>
+                    <li> Coco </li>
+                    <li> Toy Story, 1995 </li>
+                    <li> Zootopia </li>
+                    <li> Ratatouille, 2007 </li>
+                    <li> WALL-E, 2008 </li>
+                </ol><img id = 'img' src = "svg/topb.svg" alt = "top" width = "180" height = "180"></h2><hr>  
+            </div>
+        </div>
+        <div class = "note"> <!-- Список фильмов -->
+            <div class = "films">
+                <div class = "movie"> 
+                    <h1> A couple more cool movies </h1>
+                    <h2>
+                        <div class = "bk_1">
+                            <br> Spirited Away, 2002
+                            <br> Onward, 2020
+                            <br> Inside Out, 2015
+                            <br> Bambi, 1942
+                            <br> Finding Nemo, 2003
+                            <br> Shrek - all parts
+                            <br> Corpse Bride, 2005
+                            <br> The LEGO Movie, 2014
+                            <br> Frozen, 2013
+                            <br> Monster House, 2006
+                        </div>
+                        <div class = "bk_2">
+                            <br> The Incredibles, 2004
+                            <br> Up, 2009
+                            <br> The Lion King, 1994
+                            <br> Paddington, 
+                            <br> The Little Mermaid, 1989
+                            <br> Waking Life, 2001
+                            <br> Shaun the Sheep Movie, 2015
+                            <br> Moana, 2016
+                            <br> Kung Fu Panda, 2008
+                            <br> Big Hero 6, 2014
+                        </div>
+                        <div class = "bk_3">
+                            <br> Wallace & Gromit, 2005
+                            <br> Aladdin, 1992
+                            <br> The Iron Giant, 1992
+                            <br> Song of the Sea, 2014
+                            <br> The Simpsons Movie, 2007
+                            <br> Monsters, Inc., 2001
+                            <br> Despicable Me, 2010
+                            <br> Finding Dory, 2016
+                            <br> Cars, 2006
+                            <br> Lilo & Stitch, 2002
+                            <br> The Adventures of Tintin, 2011
+                            <br> How to Train Your Dragon - all parts
+                            <br> Spider-Man: Into the Spider-Verse, 2018
+                        </div>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class = "legs"> <!-- Тема -->
+            <div class = "theme">
+                <button id = 'dark'> Black Edition </button>
+                <button id = 'light'> Light Edition </button>
+                <button id = 'special'> Special Edition</button>
+                <button id = 'reset'> Standard Edition </button>
+            </div>
+        </div>
+    </div>
+    <script src = "js/cartoon.js"></script>
+</body>
+</html>

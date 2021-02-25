@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/adventure.css">
+    <link href = "https://fonts.googleapis.com/css?family=Pridi&display=swap" rel = "stylesheet">
+    <title> Adventure </title>
+</head>
+<body link = "#E9E9E9" alink = "#E9E9E9" vlink = "#E9E9E9">
+    <div class = "container">
+        <div class = "add">
+            <h1> Adventure </h1> <!-- Заголовок обозначающий какой жанр, чтобы не теряться -->
+        </div>
+        <div class = "main"> <!-- Переход на главную страницу -->
+            <h1><a href = "index.html"> Main Page </a></h1>
+        </div>
+    </div>
+    <div class = "genre"> <!-- Блок с фильмами -->
+        <hr class = "m2">
+            <div class = "slider middle">
+                <div class = "slides"> 
+                    <input type = "radio" name = "r" id = "r1" checked>
+                    <input type = "radio" name = "r" id = "r2">
+                    <input type = "radio" name = "r" id = "r3">
+        
+                    <div class = "slide s1"><img src = "img\J.jpg" alt = "Indiana"></div> <!-- Изображения, что в слайдере -->
+                    <div class = "slide"><img src = "img\LCOZ.jpg" alt = "Lost City"></div>
+                    <div class = "slide"><img src = "img\E.jpg" alt = "Everest"></div>
+                </div>
+                <div class = "navigation"> <!-- Кнопки слайдера -->
+                    <label for = "r1" class = "bar"></label>
+                    <label for = "r2" class = "bar"></label>
+                    <label for = "r3" class = "bar"></label>
+                </div>
+            </div>
+        <div class = "top"> <!-- Маленьки топ очень добротных фильмов -->
+            <div class = "list">
+                <h1> Top 5 movies that everyone should watch </h1>
+                <h2><ol>
+                    <li> Indiana Jones and the Raiders of the Lost Ark, 1981 </li>
+                    <li> The Lost City of Z, 2016 </li>
+                    <li> Everest, 2015 </li>
+                    <li> Oblivion, 2013 </li>
+                    <li> Jumanji, 1995 </li>
+                </ol><img id = "img" src = "svg/topb.svg" alt = "top" width = "180" height = "180"></h2><hr>  
+            </div>
+        </div>
+        <div class = "note"> <!-- Список фильмов -->
+            <div class = "films">
+                <div class = "movie"> 
+                    <h1> A couple more cool movies </h1>
+                    <h2>
+                        <div class = "bk_1">
+                            <br> The Odyssey, 2016
+                            <br> Alpha, 2018
+                            <br> 
+                        </div>
+                        <div class = "bk_2">
+                            <br> Jungle, 2017
+                            <br> Wild, 2017
+                            <br>
+                        </div>
+                        <div class = "bk_3">
+                            <br> North by Northwest, 1959
+                            <br> The Secret Life of Walter Mitty, 2013
+                            <br> 127 Hours, 2010
+                            <br>
+                            <br>
+                        </div>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class = "legs"> <!-- Тема -->
+            <div class = "theme">
+                <button id = 'dark'> Black Edition </button>
+                <button id = 'light'> Light Edition </button>
+                <button id = 'special'> Special Edition</button>
+                <button id = 'reset'> Standard Edition </button>
+            </div>
+        </div>
+    </div>
+    <script src = "js/adventure.js"></script>
+</body>
+</html>

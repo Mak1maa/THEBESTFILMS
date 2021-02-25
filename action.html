@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/action.css">
+    <link href = "https://fonts.googleapis.com/css?family=Pridi&display=swap" rel = "stylesheet">
+    <title> Action </title>
+</head>
+<body link = "#E9E9E9" alink = "#E9E9E9" vlink = "#E9E9E9">
+    <div class = "container">
+        <div class = "add">
+            <h1> Action </h1> <!-- Заголовок обозначающий какой жанр, чтобы не теряться -->
+        </div>
+        <div class = "main"> <!-- Переход на главную страницу -->
+            <h1><a href = "index.html"> Main Page </a></h1>
+        </div>
+    </div>
+    <div class = "genre"> <!-- Блок с фильмами -->
+        <hr class = "m2">
+            <div class = "slider middle">
+                <div class = "slides"> 
+                    <input type = "radio" name = "r" id = "r1" checked>
+                    <input type = "radio" name = "r" id = "r2">
+                    <input type = "radio" name = "r" id = "r3">
+        
+                    <div class = "slide s1"><img src = "img\MI.jpg" alt = "Mission: Impossible – Fallout"></div> <!-- Изображения, что в слайдере -->
+                    <div class = "slide"><img src = "img\JW.jpg" alt = "John Wick"></div>
+                    <div class = "slide"><img src = "img\DH.jpg" alt = "Die Hard"></div>
+                </div>
+                <div class = "navigation"> <!-- Кнопки слайдера -->
+                    <label for = "r1" class = "bar"></label>
+                    <label for = "r2" class = "bar"></label>
+                    <label for = "r3" class = "bar"></label>
+                </div>
+            </div>
+        <div class = "top"> <!-- Маленьки топ очень добротных фильмов -->
+            <div class = "list"> 
+                <h1> Top 5 movies that everyone should watch </h1>
+                <h2><ol>
+                    <li> Mission: Impossible – Fallout, 2018 </li>
+                    <li> John Wick 1-2, 2014 </li>
+                    <li> Die Hard, 1988 </li>
+                    <li> Casino Royale, 2006 </li>
+                    <li> The Expendables, 2010 </li>
+                </ol><img id = 'img' src = "svg/topb.svg" alt = "top" width = "180" height = "180"></h2><hr>  
+            </div>
+        </div>
+        <div class = "note"> <!-- Список фильмов -->
+            <div class = "films">
+                <div class = "movie"> 
+                    <h1> A couple more cool movies </h1>
+                    <h2>
+                        <div class = "bk_1">
+                            <br> Django Unchained, 2012
+                            <br> The Transporter, 2002
+                            <br> First Blood, 1982
+                            <br> Brother, 1997
+                            <br> Leon, 1994
+                            <br> Bad Boys, 1995
+                            <br> Terminator 2, 1991
+                            <br> Blade, 1998
+                            <br> Baby Driver, 2017
+                        </div>
+                        <div class = "bk_2">
+                            <br> Speed, 1994
+                            <br> Predator, 1987
+                            <br> Wanted, 2008
+                            <br> Mr. & Mrs. Smith, 2005
+                            <br> Mission: Impossible - all parts
+                            <br> The Bourne Ultimatum, 2007
+                            <br> Mad Max, 1979
+                            <br> Kill Bill, 2003
+                            <br> Fury, 2014
+                        </div>
+                        <div class = "bk_3">
+                            <br> The Expendables - all parts
+                            <br> The Fast and the Furious, 2001
+                            <br> Crank, 2006
+                            <br> Kingsman - all parts
+                            <br> Looper, 2012
+                            <br> Sherlock Holmes, 2009
+                            <br> The Man from UNCLE, 2015
+                            <br> The Hateful Eight, 2015
+                            <br> Total Recall, 1990
+                        </div>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class = "legs">
+            <div class = "theme"> <!-- Тема -->
+                <button id = 'dark'> Black Edition </button>
+                <button id = 'light'> Light Edition </button>
+                <button id = 'special'> Special Edition</button>
+                <button id = 'reset'> Standard Edition </button>
+            </div>
+        </div>
+    </div>
+    <script src = "js/action.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/thriller.css">
+    <link href = "https://fonts.googleapis.com/css?family=Pridi&display=swap" rel = "stylesheet">
+    <title> Thriller </title>
+</head>
+<body link = "#E9E9E9" alink = "#E9E9E9" vlink = "#E9E9E9">
+    <div class = "container">
+        <div class = "add">
+            <h1> Thriller </h1> <!-- Заголовок обозначающий какой жанр, чтобы не теряться -->
+        </div>
+        <div class = "main"> <!-- Переход на главную страницу -->
+            <h1><a href = "index.html"> Main Page </a></h1>
+        </div>
+    </div>
+    <div class = "genre"> <!-- Блок с фильмами -->
+        <hr class = "m2">
+            <div class = "slider middle">
+                <div class = "slides"> 
+                    <input type = "radio" name = "r" id = "r1" checked>
+                    <input type = "radio" name = "r" id = "r2">
+                    <input type = "radio" name = "r" id = "r3">
+        
+                    <div class = "slide s1"><img src = "img\SS.jpg" alt = ""></div> <!-- Изображения, что в слайдере -->
+                    <div class = "slide"><img src = "img\SPLIT.jpg" alt = ""></div>
+                    <div class = "slide"><img src = "img\GR.jpg" alt = ""></div>
+                </div>
+                <div class = "navigation"> <!-- Кнопки слайдера -->
+                    <label for = "r1" class = "bar"></label>
+                    <label for = "r2" class = "bar"></label>
+                    <label for = "r3" class = "bar"></label>
+                </div>
+            </div> 
+        <div class = "top"> <!-- Маленьки топ очень добротных фильмов -->
+            <div class = "list">
+                <h1> Top 5 movies that everyone should watch </h1>
+                <h2><ol>
+                    <li> The Sixth Sense, 1999 </li>
+                    <li> Split, 2017 </li>
+                    <li> Gravity, 2013 </li>
+                    <li> The Girl on the Train, 2016 </li>
+                    <li> The Silence of the Lambs, 1990 </li>
+                </ol><img id = "img" src = "svg/topb.svg" alt = "top" width = "180" height = "180"></h2><hr>  
+            </div>
+        </div>
+        <div class = "note"> <!-- Список фильмов -->
+            <div class = "films">
+                <div class = "movie"> 
+                    <h1> A couple more cool movies </h1>
+                    <h2>
+                        <div class = "bk_1">
+                            <br> Number 23, 2007
+                            <br> Before I Go To Sleep, 2014
+                            <br> Contre-enquête, 2007
+                            <br> Awake, 2007
+                        </div>
+                        <div class = "bk_2">
+                            <br> Limitless, 2011
+                            <br> Memento, 2000
+                            <br> Tell No One, 2006
+                            <br> Dream House, 2011
+                        </div>
+                        <div class = "bk_3">
+                            <br> Time Lapse, 2014
+                            <br> Hodejegerne, 2011
+                            <br> Primal Fear, 1996
+                            <br> Inferno, 2016
+                        </div>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class = "legs"> <!-- Тема -->
+            <div class = "theme">
+                <button id = 'dark'> Black Edition </button>
+                <button id = 'light'> Light Edition </button>
+                <button id = 'special'> Special Edition</button>
+                <button id = 'reset'> Standard Edition </button>
+            </div>
+        </div>
+    </div>
+    <script src = "js/thriller.js"></script>
+</body>
+</html>

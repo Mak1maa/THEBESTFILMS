@@ -1,0 +1,271 @@
+a{
+    text-decoration: none; 
+    color: black;
+}
+
+a:hover{
+    color: rgb(141, 0, 0);
+}
+
+html{
+    scroll-behavior: smooth; /* Плавный скролл */
+}
+
+button{ 
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+body{
+    background-color: #fff; /* Фон */
+}
+
+.legs{
+    display: flex; 
+}
+
+.theme{
+    margin-top: -66.5px;
+    margin-left: 625px;
+}
+
+.wrapper{ /* Лого */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-top: 25px;
+}
+
+.log__about{ /* Краткое описание сайта */
+    display: flex; 
+    align-items: center; 
+    margin-top: 38px; 
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+
+.log{ /* Второе лого */
+    font-family: 'Pridi', serif; 
+    flex-basis: 25%; 
+    font-size: 23px; 
+    text-align: center; 
+    padding-bottom: 5px; 
+    margin-left: 20px;
+}
+
+.about h2{
+    font-family: 'Pridi', serif; 
+    font-size: 31px; 
+    display: flex; 
+    color: #fff;
+}
+
+.about{
+    flex-basis: 71%; 
+    background-color: black; 
+    height: 45px; 
+    border-radius: 21px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.gs{
+    display: flex;
+    justify-content: center; 
+    align-items: space-between; 
+    margin-bottom: 70px;
+}
+
+.genre{ /* Жанры */
+    background-color: rgba(233, 233, 233, 0.75); 
+    border-radius: 21px; 
+    flex-basis: 27%; 
+    font-family: 'Pridi', serif; 
+    font-size: 17.2px; 
+    padding-left: 28px; 
+    margin-right: 50px; 
+    padding-top: 1.5px;
+}
+
+.genre h2{
+    color: black;
+}
+
+.slider{ /* Слайдер */
+    background-color: rgba(233, 233, 233, 0.75); 
+    flex-basis: 55%; 
+    height: 450px; 
+    border-radius: 21px;
+}
+
+.slider{
+    width: 600px; 
+    overflow: hidden; 
+    border: 10px rgba(233, 233, 233, 0.75);
+}
+
+.middle{
+    top: 0%; 
+    left: 0%; 
+    transform: translate(-0%, -0%);
+}
+
+.navigation{
+    position: absolute; 
+    bottom: 7%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex;
+}
+
+.bar{
+    height: 10px; 
+    width: 40px; 
+    margin: 6px; 
+    cursor: pointer; 
+    align-content: flex-end; 
+    background-color: rgba(233, 233, 233); 
+    border-radius: 10px; 
+    transition: all .1s ease;
+}
+
+.bar:hover{
+    opacity: 1; 
+    transform: scale(1.35);
+}
+
+input[name = "r"]{
+    position: absolute; 
+    visibility: hidden;
+}
+
+.slides{
+    width: 400%; 
+    height: 100%; 
+    display: flex;
+}
+
+.slide{
+    width: 25%; 
+    transition: all .7s ease;
+}
+
+.slide img{
+    width: 100%; height: 100%;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1{
+    margin-left: -25%;
+}
+
+#r3:checked ~ .s1{
+    margin-left: -50%;
+}
+
+#r4:checked ~ .s1{
+    margin-left: -75%;
+}
+
+.support{ /* Тех. поддержка */
+    margin-left: 117px; 
+    margin-top: -70px; 
+    font-family: 'Pridi', serif; 
+    color: black;
+}
+
+/* Медиа файлы, адаптив ------------------------------------------------------------------- */
+
+@media screen and (min-width: 1025px) and (max-width: 1400px){ /* Ноутбуки или планшеты с большой диагональю */
+    .about h2{font-size: 23px;}
+    .log h1{font-size: 35px;}
+    .legs{display: flex;}
+    .theme{width: 15px; display: flex; margin-left: 211px; height: 16px;}
+}
+
+@media screen and (max-width: 600px){
+    .log__about{display: flex; flex-wrap: wrap; justify-content: center; margin-top: 90px;}
+    .about{flex: 2;}
+    .log{display: contents; font-size: 11px; margin-right: 20px;}
+    .about h2{font-size: 10px; padding-left: 11px; display: flex;}
+    .slider{width: 300px; height: 200px; order: -1; margin-left: 20px;}
+    .gs{margin-bottom: 74px; flex-direction: column;}
+}
+
+@media screen and (min-width: 732px) and (max-width: 1024px){ /* Планшеты */
+    .slider{margin-right: 90px; height: 265px;}
+    .genre{width: 170px; height: 18%; font-size: 10px; margin-left: 76px; padding-bottom: 5px;}
+    .about h2{font-size: 17px;}
+    .log h1{font-size: 20px; margin-right: 5px;}
+    .log__about{margin-bottom: 20px; width: 90%;}
+    .support{margin-left: 105.5px; font-size: 11px;}
+    .legs{display: flex;}
+    .theme{width: 15px; display: flex; margin-left: 211px; height: 16px;}
+    .wrapper{margin: 29%;}
+}
+
+@media screen and (min-width: 411px) and (max-width: 731px){ /* Большая часть смартфонов */
+    .genre{margin-left: 13px; margin-top: 28px; width: 86%;}
+    .slider{width: 367px; height: 235px; order: -1; margin-left: 13px; margin-bottom: -10px;}
+    .log__about{margin-bottom: 5px;}
+    .about h2{font-size: 12px; margin: 5px 5px 6px 5px;}
+    .log h1{margin-right: 10px; margin-bottom: 15px;}
+    .wrapper{margin-top: 45px; margin-right: 10px;}
+    .theme{margin-left: -20px; padding-left: 69px; display: flex; flex-direction: column;}
+    .support{margin-left: 45px; font-size: 16px;}
+    .legs{display: flex;}
+    .ok{display: flex; justify-content: center; align-items: center;}
+    button{margin: 2px;}
+}
+
+@media screen and (max-width: 375px){
+    .genre{margin-left: 13px; width: 85%;}
+    .slider{width: 92.8%; height: 229px; order: -1; margin-left: 13px; margin-bottom: 15px;}
+    .log__about{margin-bottom: 5px;}
+    .about h2{font-size: 10px; margin: 4px 8px 5px 2px;}
+    .log h1{margin-right: 10px; margin-bottom: 15px;}
+    .wrapper{margin-top: 22px; margin-right: 10px;}
+    .theme{margin-left: -20px; padding-left: 69px; display: flex;flex-direction: column;}
+    .support{margin-left: 45px; font-size: 15px;}
+    .legs{display: flex;}
+    .ok{display: flex; justify-content: center; align-items: center;}
+    button{margin: 2px;}
+}
+
+@media screen and (max-width: 360px){
+    .wrapper{margin-top: 0px;}
+    .gs{margin-left: -8px;}
+    .support{margin-left: 48px; margin-top: -78px;}
+    .about h2{font-size: 9.5px;}
+    .slider{width: 327px; height: 207px; order: -1; margin-left: 16px; margin-bottom: 16px;}
+    .log{margin-right: 5px; margin-left: -8px; margin-bottom: 15px;}
+    .log__about{margin-bottom: 5px;}
+    .about{margin-right: -10px;}
+    .genre{margin-left: 16px; width: 85%;}
+    .theme{margin-left: -20px; padding-left: 69px; display: flex; flex-direction: column;}
+    .support{margin-left: 40px; font-size: 14px;}
+    .legs{display: flex;}
+    .ok{display: flex; justify-content: center; align-items: center;}
+}
+
+@media screen and (min-width: 393px) and (max-width: 410px){ /* Redmi Note 5 */
+    .slider{width: 92.5%; height: 20%; margin-left: 13px; margin-bottom: -15px;}
+    .log__about{margin-left: 22px;margin-bottom: 1px;}
+    .log h1{margin-left: -3px; margin-right: 13px;}
+    .genre{margin-top: 28px; margin-left: 13px; width: 85%; font-size: 19px;}
+    .about h2{margin-left: 2px; font-size: 11px;}
+    .wrapper{margin-top: 20px;}
+    .log h2{margin-right: 5px;}
+    .theme{margin-left: -20px; padding-left: 69px; display: flex; flex-direction: column;}
+    button{margin: 2px;}
+    .genre h2{padding-bottom: 4px;}
+    .support{margin-left: 46px;}
+    .legs{display: flex; padding-top: 1px; padding-bottom: 2px;}
+    .ok{display: flex; justify-content: center; align-items: center;}
+}
